@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Sarabun', sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    background-color: #1C2230;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem 3rem;
+    background-color: #1C2230;
+    z-index: 1;
+}
+
+#header-img {
+    height: 35px;
+    width: 100px;
+}
+
+ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+#banner {
+    margin-top: 6.5rem;
+    height: auto;
+}
+
+.banner-image {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+}
+
+#banner-text {
+    text-align: center;
+    padding-top: 1rem;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+#banner-text h1 {
+    font-size: xx-large;
+    letter-spacing: 1px;
+}
+
+#banner-text p {
+    letter-spacing: 1px;
+    font-size: medium;
+    padding: 1% 0;
+}
+
+#banner-btn {
+    background: #3EB2D9;
+    border: none;
+    border-radius: 2rem;
+    padding: .8rem 5rem;
+    margin-top: 2%;
+}
+
+#features,
+#how {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.feature-item {
+    text-align: center;
+    margin: 0 1% 8% 0;
+}
+
+.feature-item p {
+    padding: 0 5%
+}
+
+#how {
+    grid-template-columns: 50% 50%;
+    margin-top: 10%;
+    max-width: 85%;
+}
+
+.how-text {
+    padding: 2rem;
+}
+
+.how-text h1 {
+    font-size: xx-large;
+    letter-spacing: 1px;
+}
+
+.how-text a {
+    color: #3EB2D9;
+    border-bottom: 2px solid #3EB2D9;
+}
+
+.how-video {
+    width: 100%;
+    height: auto;
+}
+
+#team-members {
+    display: flex;
+    max-width: 85%;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.team-member {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #232B40;
+    padding: 3%;
+    margin-right: 3%;
+    text-align: justify-all;
+}
+
+.team-member img {
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+}
+
+.profile {
+    display: flex;
+    margin-top: 30px;
+}
+
+.profile-info {
+    justify-content: space-around;
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+.profile-title {
+    font-size: smaller;
+    font-weight: normal;
+}
+
+#sign-in {
+    background-color: #1C2230;
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: -1px -1px 20px -5px rgba(0, 0, 0, .8);
+    margin-bottom: 10%;
+    border-radius: 5px;
+    padding: 3% 5% 5% 5%;
+    z-index: 2;
+    position: relative;
+}
+
+#sign-in h1 {
+    font-size: xx-large;
+    padding-bottom: 2%;
+}
+
+#sign-in form input {
+    border-radius: 3rem;
+    border: none;
+    padding: 2%;
+    margin-right: 4%;
+}
+
+#sign-in form input[type="email"] {
+    width: 60%;
+    padding-left: 3%;
+    margin-top: 5%;
+    color: #000;
+}
+
+#sign-in form input[type="submit"] {
+    width: 30%;
+    background: #3EB2D9;
+}
+
+footer {
+    background: #232B40;
+    padding: 12% 5% 3% 5%;
+    margin-top: -18%;
+}
+
+#footer {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    max-width: 90%;
+    margin: 0 auto;
+    grid-column-gap: 1%;
+}
+
+.footer-item ul li {
+    display: block;
+    text-decoration: none;
+}
+
+#copyright {
+    text-align: center;
+    background-color: #1C2230;
+    padding: 1%;
+}
+
+/*media queries*/
+
+@media only screen and (max-width: 1078px) {
+    .how-text {
+        margin-top: -7%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .how-text {
+        margin-top: -11%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    #features,
+    #how {
+        margin-top: 11%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+
+    #features {
+        max-width: 90%
+    }
+    #how {
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        max-width: 85%;
+        margin-top: 13%;
+    }
+
+    .how-text {
+        margin-top: 9%;
+        padding: 1.5rem 0;
+    }
+}
+
+@media only screen and (max-width: 810px) {
+
+    #features {
+        margin-top: 12%
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    #features {
+        margin-top: 13%
+    }
+
+    .how-text {
+        margin-top: 4%;
+    }
+    #team-members {
+    	margin-top: 13%;
+    }
+
+    .team-member>p {
+    	text-align: justify-all;
+    }
+    .profile {
+    	display: grid;
+    	grid-template-columns: 100%;
+    	grid-template-rows: 50% 50%;
+    	margin-top: 20px;
+    	text-align: center;
+    }
+    .profile-info {
+    	margin: 0 auto;
+    	margin-bottom: 10px;
+    }
+    #sign-in {
+    	max-width: 70%;
+    }
+    #sign-in form input[type="email"] {
+    width: 50%;
+    margin-top: 5%;
+	}
+
+	#sign-in form input[type="submit"] {
+    width: 40%;
+	}
+	
+	#footer {
+    grid-template-columns: 33% 33% 33% ;
+    max-width: 95%;
+	}
+
+	.footer-item:first-child {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 635px) {
+	#header,
+	#team-members,
+	#features {
+		display: grid;
+    	grid-template-columns: 100%;
+		grid-row-gap: 5%;
+		margin-top: 20%;
+	}
+
+    #header {
+    	grid-template-rows: 30% 70%;
+    	grid-row-gap: 10%;
+    	justify-items: center;
+    	margin-top: 0;
+    }
+    #nav-bar {
+    	margin-top: 3%;
+    	padding-bottom: -2%;
+    }
+    #team-members {
+		grid-row: 100% 100% 100%;
+		max-width: 70%;
+    }
+    #features {
+		grid-row: 100% 100% 100% 100%;
+    }
+    #how, 
+    #sign-in {
+    	margin-top: 30%;
+    }
+    #banner {
+    margin-top: 10rem;
+	}
+	.team-member {
+		padding: 10%;
+    }
+    #banner-text {
+    	max-width: 80%;
+    	margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+	#sign-in form input[type="email"] {
+    width: 100%;
+    margin-bottom: 3%;
+	}
+
+	#sign-in form input[type="submit"] {
+    width: 100%;
+	}
+
+	footer {
+    padding: 25% 5% 3% 5%;
+    margin-top: -28%;
+}
+	#footer {
+		display: grid;
+    	grid-template-columns: 100%;
+		grid-row: 100% 100% 100% 100%;
+		grid-gap: 10%;
+		margin-bottom: 15%;
+	}
+
+}
